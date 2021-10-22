@@ -2440,7 +2440,7 @@ footer .footer-images img {
   color: #fff;
   position: fixed;
   bottom: 1rem;
-  transform: translateX(95vw);
+  right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
