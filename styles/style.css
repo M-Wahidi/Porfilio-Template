@@ -411,7 +411,7 @@ nav ul li a {
   position: relative;
 }
 .gallery-images .image::after {
-  content: " ";
+  content: "";
   height: 0px;
   width: 0px;
   z-index: 10;
