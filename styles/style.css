@@ -364,7 +364,7 @@ nav ul li a {
   padding: unset;
   padding-left: 1rem;
   padding-bottom: 0.9rem;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 .article-readmore {
@@ -562,7 +562,7 @@ nav ul li a {
   padding-top: 2rem;
   text-align: center;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.9rem;
 }
 .feature-box .features-more-btn {
   position: relative;
