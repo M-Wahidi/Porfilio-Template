@@ -1725,7 +1725,7 @@ nav ul li a {
 }
 .pricing-plans::before {
   content: " ";
-  background: url("/Assests/images/sections/pricing-plans/black.png") center;
+  background: url("/Assests/images/sections/pricing-plans/bg-black.png") center;
   background-size: cover;
   height: 40%;
   width: 40%;
@@ -1736,7 +1736,7 @@ nav ul li a {
 }
 .pricing-plans::after {
   content: " ";
-  background: url("/Assests/images/sections/pricing-plans/black.png") center
+  background: url("/Assests/images/sections/pricing-plans/bg-black.png") center
     center;
   background-size: cover;
   height: 40%;
