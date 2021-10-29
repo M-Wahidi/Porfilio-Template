@@ -137,8 +137,8 @@ nav ul li a {
   width: 100%;
   border-bottom: 250px solid #fff;
   position: absolute;
-  bottom: -120px;
-  transform: skewY(-7deg);
+  bottom: -160px;
+  transform: skewY(-3deg);
 }
 
 .welcome-text {
@@ -177,6 +177,7 @@ nav ul li a {
   flex-direction: column;
   position: relative;
   bottom: 2rem;
+  padding: 2rem;
 }
 
 .arrow {
@@ -318,7 +319,6 @@ nav ul li a {
   opacity: 0;
 }
 .articles-post {
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,7 +336,7 @@ nav ul li a {
   position: relative;
   box-shadow: 2px 2px 1px 1px rgb(0, 0, 0, 0.1);
   font-family: var(--main-font);
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 .article:hover,
 .article:active {
@@ -365,6 +365,7 @@ nav ul li a {
   padding-left: 1rem;
   padding-bottom: 0.9rem;
 }
+
 .article-readmore {
   position: absolute;
   bottom: 0;
@@ -373,7 +374,17 @@ nav ul li a {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   color: var(--logo-color);
+}
+.article-readmore::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(209, 208, 208, 0.664);
 }
 .article-readmore {
   padding-right: 1rem;
@@ -399,13 +410,13 @@ nav ul li a {
   flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 2rem 2rem;
 }
 .gallery-images .image {
-  width: 310px;
-  height: 300px;
+  width: 315px;
+  height: 315px;
   border: 15px solid #fff;
-  box-shadow: 1px 3px 1px 1px rgb(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.1);
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -474,7 +485,7 @@ nav ul li a {
   flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 .feature-box {
   width: 290px;
@@ -691,7 +702,7 @@ nav ul li a {
   flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
-  gap: 2.5rem;
+  gap: 2rem;
   padding-top: 4rem;
 }
 
@@ -709,7 +720,7 @@ nav ul li a {
   height: 90px;
   width: 90px;
   right: -15px;
-  top: -30px;
+  top: -25px;
   border: 10px solid var(--main-section-Bcolor);
   border-radius: 50%;
 }
@@ -1441,6 +1452,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  padding: 0.5rem;
 }
 
 .how-it-works-box .image img {
@@ -1461,6 +1473,7 @@ nav ul li a {
   font-size: 0.8rem;
   color: grey;
   padding-left: 0rem;
+  line-height: 1.4rem;
 }
 
 /* -------------------------- Latest Events --------------------------------- */
@@ -1694,7 +1707,6 @@ nav ul li a {
   border-radius: 50px;
   padding: 1.5rem;
   left: 1rem;
-  font-size: 1rem;
   cursor: pointer;
 }
 .event-subscribe input::placeholder {
@@ -1846,7 +1858,7 @@ nav ul li a {
   position: absolute;
   transform: rotate(45deg);
   right: 20.5px;
-  top: 155px;
+  top: 150px;
   width: 50px;
   height: 50px;
   background-color: #fff;
@@ -2084,13 +2096,13 @@ nav ul li a {
   align-items: center;
 }
 .top-video-content-main {
-  padding: 1rem;
   width: 100%;
   height: 70%;
 }
 .top-video-content-main img {
   height: 100%;
   width: 100%;
+  padding: 1rem;
 }
 .top-video-title-main {
   background: #fff;
@@ -2561,6 +2573,7 @@ footer .footer-images img {
   }
   .top-video-title-main {
     text-align: center;
+    width: calc(100% - 3rem);
   }
   .discount {
     flex-direction: column;
@@ -2579,6 +2592,12 @@ footer .footer-images img {
   }
   .discount-form-box {
     justify-content: unset;
+  }
+}
+@media only screen and (max-width: 1115px) {
+  .pricing-plans-box.most-popular {
+    position: relative;
+    top: 0;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 730px) {
@@ -2696,6 +2715,14 @@ footer .footer-images img {
   }
   .mega-menu .links li a::before {
     all: unset;
+  }
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem 2rem;
   }
   .testimonials-sections {
     width: 80%;
